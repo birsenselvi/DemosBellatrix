@@ -80,7 +80,7 @@ public class BaseSteps {
         String locator = String.format(addToCart, productName);
         By addToCart = By.xpath(locator);
         click(addToCart);
-        Thread.sleep(500);
+        Thread.sleep(1000);
     }
     public void assertInCart(String productName){
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
